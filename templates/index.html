@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Integral Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Integral Lipat Dua Calculator</h1>
+      <div class="content">
+        <div class="right-box">
+          <form action="/hasil" method="post">
+            <label for="fungsi">Fungsi:</label><br />
+            <input type="text" id="fungsi" name="fungsi" /><br />
+            <label for="integrasi">Pilihan Integrasi:</label><br />
+            <select id="integrasi" name="integrasi">
+              <option value="dy">dy/dx</option>
+              <option value="dx">dx/dy</option></select
+            ><br />
+            <label for="x_lower">Batas Bawah x:</label><br />
+            <input type="text" id="x_lower" name="x_lower" /><br />
+            <label for="x_upper">Batas Atas x:</label><br />
+            <input type="text" id="x_upper" name="x_upper" /><br />
+            <label for="y_lower">Batas Bawah y:</label><br />
+            <input type="text" id="y_lower" name="y_lower" /><br />
+            <label for="y_upper">Batas Atas y:</label><br />
+            <input type="text" id="y_upper" name="y_upper" /><br /><br />
+            <input type="submit" value="Hitung" />
+          </form>
+        </div>
+      </div>
+    </div>
+   
+    </div>
+    <div class="box">
+      <div class="result">
+        {% if hasil_integral %}
+        <h2>Hasil Integral:</h2>
+        <p>Hasil (pecahan): {{ hasil_pecahan }}</p>
+        <p>Hasil: {{ hasil_integral }}</p>
+  
+        {% endif %}
+      </div>
+    </div>
+    <div class ="tutorial">
+    <a href="/help" class="info-btn">CARA PENGGUNAAN KALKULATOR</a>
+    </div>
+   
+    <div class ="backhome">
+      <a href="/" class="info-btn">KEMBALI KE MENU UTAMA</a>
+      </div>
+  
+    
+  </body>
+</html>

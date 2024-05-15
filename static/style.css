@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: url(background.jpg);
+}
+
+.container {
+  background-color: rgb(59, 165, 211);
+  width: 900px;
+  height: 500px;
+  box-shadow: 0px, 10px, 10px, 0px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.content .right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.right-box input {
+  margin: 1px;
+  width: 300px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.box {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.box .result {
+  background: rgb(59, 165, 211);
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.tutorial .info-btn {
+  color: #fff;
+  background-color: rgb(6, 127, 30);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.info-btn:hover {
+  background: rgb(22, 104, 139);
+}
+
+.backhome {
+  padding-top: 30px;
+}
+
+.backhome .info-btn {
+  color: #fff;
+  background-color: rgb(6, 127, 30);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
